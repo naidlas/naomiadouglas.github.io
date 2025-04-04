@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #ff9ee3; /* Adjust background color */
+    position:relative; /* Ensures proper positioning */
+    margin-bottom: 0px;
+}
+
+h5 {
+    list-style: none;
+    padding: 0px;
+    margin-right: 70px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    font-size: 15px;
+    color: #FFF7F1;
+    text-decoration: underline #ff9ee3;
+    background-color: #FF9EE3;
+}
+
+.nav-left {
+    left: 50px;
+}
+
+.nav-right {
+    right: 50px;
+}
+
+.nav-left a, .nav-right a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff7f1; /* Change as needed */
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+h5:hover {
+    color: #f0e2ed; /* Adjust hover color */
+    transform: scale(1.1);
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust logo size */
+    width: 140px;
+    margin-bottom: 0px;
+}
+
+body {
+    display:inline-flexbox;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.product-container {
+    justify-content: center;
+    display: inline-flex;
+    background: #fff;
+    align-items: center;
+    padding: 5px;
+    border-radius: 40px;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 50px;
+    margin-left: 220px;
+    padding-right: 10px;
+}
+
+.product-details img {
+    width: 300px;
+    height: 380px;
+    cursor: pointer;
+    border-radius: 60px;
+    transition: 0.3s ease-in;
+    box-shadow: 0 5px 15px rgba(223, 176, 207, 0.438);
+}
+
+.product-details {
+    padding: 60px;
+    padding-bottom: 50px;
+    word-spacing: 5px;
+    display: inline-flex;
+}
+
+.product-details h1 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #ff9ee3;
+    margin-left: 40px;
+    font-family: Cinzel Decorative;
+}
+
+.product-details h2 {
+    color: #c49b74;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.product-details h6 {
+    margin-left: 40px;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    margin-left: 40px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    display: inline;
+    padding: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+    color:#FFF7F1;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color: #FF9EE3;
+}
+
+.quantity input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background: #c49b74;
+}
+
+.back {
+    display: inline;
+    padding: 10px;
+    margin-left: 40px;
+    text-decoration: none;
+    color:#FFF7F1;
+    font-weight: bold;
+    border-radius: 40px;
+    background-color: #c49b74;
+    font-size: 10px;
+}
+
+.back:hover{
+    background-color: #ec0606;
+}
+
+footer {
+    background-color: #FF9EE3;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-logo{
+    height: 80px;
+    align-items: center;
+    background-color: #FF9EE3;
+}
+
+.footer-nav a {
+    color: #fff7f1;
+    text-decoration:none;
+    margin: 30px;
+    background-color: #FF9EE3;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration:none;
+    background-color: #FF9EE3;
+}
+
+h4{
+    background-color: #FF9EE3;
+    color: #FFF7F1;
+    display: contents;
+    text-align: center;
+    padding: 5%;
+    margin: 0%;
+}
+
+h3{
+    color: #fff7f1;
+    background-color: #ff9ee3;
+    margin-top: 45px;
+}

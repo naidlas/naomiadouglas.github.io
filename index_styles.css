@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ff9ee3;
+    color: #fff7f1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9ee3; /* Adjust background color */
+    position:relative; /* Ensures proper positioning */
+    margin-bottom: 0px;
+}
+
+h5 {
+    list-style: none;
+    margin-right: 70px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    font-size: 15px;
+    color: #FFF7F1;
+    text-decoration: none;
+    background-color: #FF9EE3;
+}
+
+.nav-left {
+    left: 50px;
+}
+
+.nav-right {
+    right: 50px;
+}
+
+.nav-left a, .nav-right a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff7f1; /* Change as needed */
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    line-height:40px;
+}
+
+h5:hover {
+    color: #f0e2ed; /* Adjust hover color */
+    transition: 0.3 ease;
+    border-radius: 40px;
+    box-sizing: border-box;
+
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust logo size */
+    width: 140px;
+    margin-bottom: 0px;
+}
+
+.overlay img{
+width: 1351px;
+}
+
+p{
+    color: #c49b74;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: #fff7f1;
+    font-weight: bold;
+    padding: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #FFF7F1;
+    padding-left: 230px;
+    padding-right: 230px;
+    line-height: 2.0;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: -90px; /* optional: adjust spacing if needed */
+    padding: 40px;
+    background-color: #fff7f1;
+}
+
+.aboutus {
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin: 20px auto 80px auto; 
+    display: block; 
+    text-align: center;
+    font-family: 'Abril Fatface', serif;
+    background-color: #e8cdb0;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    
+}
+
+h1{
+    text-align: center;
+    background-color: #ff9ee3;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    font-size: 50px;
+    text-decoration: underline;
+    color: #FFF7F1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Cinzel Decorative", serif;
+}
+
+/* Container for images */
+.image-container {
+    display: flex; /* Aligns images in a row */
+    justify-content: center; /* Centers images horizontally */
+    gap: 65px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    padding: 20px 50px;
+    margin: 40px;
+    background-color: #FF9EE3;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Styling for images */
+.image-container img {
+    width: 200px; /* Resize image width */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 800px; /* Optional rounded corners */
+}
+
+/* Buttons Section */
+.product-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    text-decoration-line: none;
+}
+
+/* Button Styling */
+.product-buttons {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+    color: #fff7f1;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-family: Abril Fatface;
+}
+
+
+.product-buttons:hover {
+    color: #C49B74;
+}
+
+body {
+    margin: 0;
+    font-family: Abril Fatface;
+    background: #FFF7F1;
+    color: #C49B74;
+}
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background: #FFF7F1;
+    font-family: "Cinzel Decorative", Times, serif;
+}
+.contact-section h2 {
+    color: #FF9EE3;
+    font-size: 28px;
+    margin-bottom: 100px;
+    font-family: "Cinzel Decorative", times new roman;
+    background-color: #FFF7F1;
+    padding-bottom: 100px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #FFF7F1;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFF7F1;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 250px;
+    padding: 20px;
+    border: 2px solid #e8cdb0;
+    border-radius: 30px;
+    background-color: #FFF7F1;
+}
+
+.contact-form button {
+    background: #e8cdb0;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 90px;
+    margin-left: 100px;
+}
+
+.contact-form button:hover{
+    background-color:#FF9EE3 ;
+}
+
+.contact-info {
+    max-width: 1000px;
+    background-color: #FFF7F1;
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin: 2px;
+    margin-left: 200px;
+    text-align: left;
+    background-color: #fff7f1;
+    padding: 20px;
+    font-family: Abril Fatface;
+    font-weight: 500;
+}
+
+.contact-info img {
+    width: 35px;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-color: #FFF7F1;
+}
+
+footer {
+    background-color: #FF9EE3;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-logo{
+    height: 80px;
+    align-items: center;
+    background-color: #FF9EE3;
+}
+
+.footer-nav a {
+    color: #fff7f1;
+    text-decoration:none;
+    margin: 30px;
+    background-color: #FF9EE3;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration:none;
+    background-color: #FF9EE3;
+}
+
+h4{
+    background-color: #FF9EE3;
+    color: #FFF7F1;
+    display: contents;
+    text-align: center;
+    padding: 5%;
+    margin: 0%;
+}
+
+h3{
+    color: #fff7f1;
+    background-color: #ff9ee3;
+    margin-top: 45px;
+}
+
+h2{
+    color: black;
+    display: inline;
+    font-size: 30px;
+    background-color: #FFF7F1;
+}

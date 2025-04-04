@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - GloMuse Co.</title>
+    <link rel="stylesheet" href="product_styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-left">
+                <a href="aboutus.html"> <h5>ABOUT US</h5></a>
+            </ul>
+            <div class="logo">
+                <a href="index.html"> <img src="images/logo.png" alt="GloMuse Co."></a>
+            </div>
+            <ul class="nav-right">
+                <a href="shop.html"><h5>SHOP</h5></a>
+            </ul>
+        </nav>
+    </header>      
+    <section>
+        <div class="product-container"> 
+            <section class="product-details">
+                <div id="product-image">
+                    <!-- Product image will be inserted dynamically -->
+                </div>
+        
+                <div id="product-details">
+                    <h1 id="product-name"></h1>
+                    <h2 id="product-price"></h2>
+                    <h6 id="product-description"></h6>
+                    <div class="quantity">
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" value="1" min="1">
+                    </div>
+                    <a href="a" class="btn">ADD TO CART</a>
+                    <a href="shop.html" class="back">BACK TO SHOP</a>
+                    
+                </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to dynamically load product details based on URL parameter
+        const productData = {
+            1: {
+                name: "Leo Selir Purse",
+                price: "$150.00 TTD",
+                description: "Description: Crafted from premium black genuine leather, this purse features a sleek exterior with a soft suede interior, ensuring durability and luxury. The gold-tone hardware adds a touch of elegance, making it a versatile everyday accessory.",
+                image: "images/Shop All.jpeg"
+            },
+
+            2: {
+                name: "Clyde Shoulder Bag",
+                price: "$135.00 TTD",
+                description: "Description: Designed with a smooth beige faux leather exterior, this bag boasts a plush velvet interior, providing a soft and protective space for your essentials. The adjustable strap and golden buckle accents enhance its sophisticated charm.",
+                image: "images/El Clyde Shoulder Bag"
+            },
+
+            3: {
+                name: "Cloud Oval Bag",
+                price: "$150.00 TTD",
+                description: "Description: This stylish bag has a cream-colored genuine leather exterior with a silk-lined interior for a luxurious touch. The gold-accented chain strap complements the oval-shaped design, offering both elegance and comfort.",
+                image: "images/Cloud Shoulder Bag "
+            },
+
+            4: {
+                name: "Forge Shoulder Bag",
+                price: "$120.00 TTD",
+                description: "Made for durability, this brown distressed leather bag features a rugged yet stylish exterior with a cotton-lined interior, ensuring both sturdiness and softness. The antique brass hardware enhances its vintage aesthetic.",
+                image: "images/Forge Shoulder Bag"
+            },
+
+            5: {
+                name: "Pou Shoulder Bag",
+                price: "$105.00 TTD",
+                description: "Description: A compact yet stylish piece, this bag has a glossy navy-blue faux leather exterior and a satin-lined interior for a soft, luxurious feel. The gold-tone zipper and adjustable strap offer versatility and ease of use.",
+                image: "images/Pou Shoulder Bag"
+            },
+
+            6: {
+                name: "Gigi Shoulder Bag",
+                price: "$130.00 TTD",
+                description: "Description: Featuring a blush pink vegan leather exterior, this chic bag is lined with soft microfiber fabric to protect your belongings. The subtle silver-tone embellishments and structured design make it perfect for daily wear.",
+                image: "images/Gigi Shoulder Bag"
+            },
+
+            7: {
+                name: "La Apir Tote Bag",
+                price: "$255.00 TTD",
+                description: "Description: A spacious tote in deep burgundy genuine leather, this bag has a durable canvas interior with multiple compartments for organization. The reinforced handles and gold metallic details add sophistication and strength.",
+                image: "images/La Apir Tote Bag"
+            },
+
+            8: {
+                name: "Ana-Bel Tote Bag",
+                price: "$210.00 TTD",
+                description: "Description: Crafted from light caramel-hued faux leather, this tote features a smooth satin interior with dedicated pockets for effortless organization. The minimalist design is complemented by silver-tone zippers and handles, offering both function and style.",
+                image: "images/Bel Tote Bag"
+            },
+
+            9:{
+                name: "Cards Keychain", 
+                price: "$25.00", 
+                description: "Description: A stylish keychain in rose gold with a faux leather cardholder, soft suede interior, and metallic clasp.", 
+                image: "images/Cards Keychain.jpeg" 
+            },
+
+            10:{ 
+                name: "3 Hearts Keychain", 
+                price: "$30.00", 
+                description: "Description: A cute keychain with three heart charms in red, pink, and gold enamel, finished with a glossy resin coating and gold-tone chain.", 
+                image: "images/3 Hearts Keychain.jpg" 
+            },
+
+            11:{ 
+                name: "Love Yourself Keychain",
+                price: "$30.00", 
+                description: "Description: A motivational keychain featuring 'Love Yourself' engraved on a matte gold acrylic charm with a soft vegan leather tassel accent.", 
+                image: "images/Love Yourself Keychain.jpg" 
+            },
+
+            12:{ 
+                name: "Bow Keychain", 
+                price: "$20.00", 
+                description: "Description: A delicate bow-shaped keychain crafted from pearl-white resin with a polished metal ring and satin fabric center accent.", 
+                image: "images/Bow Keychain" 
+            },
+            
+            13:{ 
+                name: "4 Clover Bracelet", 
+                price: "$150.00", 
+                description: "Description: A lucky four-leaf clover bracelet with a gold-plated chain and green enamel clover charms, lined with microfiber on the clasp area for comfort.", 
+                image: "images/4 Clover Bracelet.jpg" 
+            },
+            
+            14:{ 
+                name: "Gold Bow Necklace", 
+                price: "$100.00", 
+                description: "Description: A classy necklace with a gold bow pendant made of stainless steel with a brushed finish and hypoallergenic coating.",
+                image: "images/Flower Necklace.jpg" 
+            },
+            
+            15:{ 
+                name: "Red Flower Necklace", 
+                price: "$110.00", 
+                description: "Description: A vibrant red flower necklace with a velvet flower pendant and gold-plated chain, featuring a soft suede backing for comfort.", 
+                image: "images/Bow Necklace.jpg" 
+            },
+            
+            16:{ 
+                name: "White Hair Bow", 
+                price: "$45.00", 
+                description: "Description: A simple and elegant hair bow made from white silk satin, attached to a durable plastic clip lined with soft fabric for grip.", 
+                image: "images/Hair Bow.jpg" 
+            },
+            
+            17:{ 
+                name: "Pink Flower Claw Clip", 
+                price: "$25.00", 
+                description: "Description: A stylish pink claw clip shaped like a flower, made from glossy acrylic with a sturdy spring and smooth edges for hair protection.", 
+                image: "images/Pink Flower Claw Clip.jpg" 
+            },
+            
+            18:{ 
+                name: "Blue Flower Claw Clip", 
+                price: "$25.00", 
+                description: "Description: A trendy claw clip in sky blue floral shape, crafted from high-quality resin with a soft rubber interior grip to hold hair securely.", 
+                image: "images/Blue Flower Claw Clip.jpg" 
+            },
+            
+            19:{ 
+                name: "Yellow Flower Claw Clip", 
+                price: "$25.00", 
+                description: "Description: A bright yellow flower claw clip made from durable acrylic with a soft-touch matte finish and anti-slip lining.", 
+                image: "images/Yellow Flower Claw Clip.jpg" 
+            },
+            
+            20:{ 
+                name: "Red Silk Headband", 
+                price: "$20.00", 
+                description: "Description: A luxurious red headband made of pure silk exterior with a velvet-padded inner lining for maximum comfort and hold.", 
+                image: "images/Red Silk Headband.jpg" 
+            },
+
+            21:{ 
+                name: "Pink Glitter Flask", 
+                price: "$75.00", 
+                description: "Description: A sparkling pink glitter flask with a stainless steel exterior, BPA-free plastic interior, and a twist-seal lid with rhinestone accent.", 
+                image: "images/Pink Glitter Flask.jpg" 
+            },
+            
+            22:{
+                name: "Blue HydroFlask", 
+                price: "$100.00", 
+                description: "Description: A durable and stylish matte blue HydroFlask featuring double-wall vacuum-insulated stainless steel and a silicone base for grip.", 
+                image: "images/Blue HydroFlask" 
+            },
+            
+            23:{ 
+                name: "Owala Bottle", 
+                price: "$350.00",
+                description: "Description: A sleek and modern Owala water bottle made from BPA-free plastic, featuring a matte finish and a stainless steel inner lining for temperature control.", 
+                image: "images/Owala Bottle" 
+            },
+        
+            24:{ 
+                name: "Pink Exercise Bottle", 
+                price: "$50.00", 
+                description: "Description: A practical pink bottle for workouts with a textured silicone exterior for grip, and a clear BPA-free plastic body with a flip-top lid.", 
+                image: "images/Pink Exercise Bottle" 
+            },
+
+            25:{ 
+                name: "Turtle Leo Cup", 
+                price: "$120.00",
+                description: "Description: A unique cup featuring a turtle design printed on frosted glass, with a soft rubber sleeve for insulation and a stainless steel straw.", 
+                image: "images/Turtle Leo Cup" 
+            },
+   
+            26:{ 
+                name: "Bamboo Top Cup", 
+                price: "$55.00", 
+                description: "Description: A minimalist cup with a transparent glass body and a smooth bamboo lid, including a silicone seal for spill resistance and eco-friendly design.", 
+                image: "images/Bamboo Covered Cup" 
+            },
+   
+            27:{ 
+                name: "Cow-Print Notebook", 
+                price: "$35.00", 
+                description: "Description: A cute notebook with a pink and black cow-print faux leather cover, spiral-bound with lined pages and a soft-touch interior cover lining.", 
+                image: "images/Pink Cow Print Notebook.jpg" 
+            },
+    
+            28:{ 
+                name: "Neolet Calculator", 
+                price: "$25.00", 
+                description: "Description: A stylish and functional calculator with a glossy purple finish, soft-touch silicone buttons, and a lightweight plastic build.", 
+                image: "images/Purple Neo Calculator" 
+            },
+    
+            29:{ 
+                name: "Polka Dot Chipboard", 
+                price: "$55.00", 
+                description: "A chic chipboard clipboard with a white polka dot vinyl exterior, smooth MDF core, and a sturdy gold metal clip.", 
+                image: "images/White Polcadot Chipboard" 
+            },
+  
+            30:{ 
+                name: "A.S Sticky Notes", 
+                price: "$40.00", 
+                description: "Description: A pack of colorful sticky notes in pastel shades, made with premium paper for smooth writing, backed with non-toxic adhesive.", 
+                image: "images/Colored Sticky Notes" 
+            },
+   
+            31:{ 
+                name: "Fluff Quilted Pouch", 
+                price: "$30.00", 
+                description: "Description: A soft and cozy quilted pouch in blush pink, featuring a padded polyester exterior and a silky satin interior with gold zipper closure.", 
+                image: "images/Pink Quilted Pouch" 
+            },
+   
+            32:{ 
+                name: "F.L Bow Notebook", 
+                price: "$35.00", 
+                description: "Description: A cute notebook with a soft pink faux leather cover and a printed bow design, lined pages, and a flexible fabric spine.", 
+                image: "images/Pink Bow Notebook" 
+            },
+    
+            33:{ 
+                name: "Ball Point Pens", 
+                price: "$45.00", 
+                description: "Description: A set of smooth ballpoint pens with 3-colored plastic casings, metallic clips, and refillable ink cartridges.", 
+                image: "images/Ball Point Pens" 
+            },
+   
+            34:{ 
+                name: "Gummy Bear Pen", 
+                price: "20.00", 
+                description: "Description: A fun and cute multi-colored pen with a gummy bear-shaped topper in translucent resin, and a smooth-grip silicone-coated barrel.", 
+                image: "images/Gummy Bear Pen"
+            }
+};
+
+        // Get the product ID from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        // Fetch the product details from the productData object
+        if (productData[productId]) {
+            const product = productData[productId];
+
+            // Insert product details into the page
+            document.getElementById('product-name').innerText = product.name;
+            document.getElementById('product-price').innerText = product.price;
+            document.getElementById('product-description').innerText = product.description;
+            document.getElementById('product-image').innerHTML = `<img src="${product.image}" alt="${product.name}">`;
+        } else {
+            // If no product found, show an error message
+            document.getElementById('product-info').innerHTML = "<h2>Product not found</h2>";
+        }
+
+    </script>
+
+<footer>
+    <div class="footer-content">
+        <img src="images/logo.png" alt="GloMuse Logo" class="footer-logo">
+        <nav class="footer-nav">
+            <a href="#"><h4>CONTACT</h4></a>
+            <a href="shop.html"><h4>SHOP</h4></a>
+            <a href="index.html"><h4>HOME</h4></a>
+            <a href="aboutus.html"><h4>ABOUT-US</h4></a>
+        </nav>
+        <h3>© 2025 GloMuse Co.</h3>
+    </div>
+</footer>
+</body>
+</html>

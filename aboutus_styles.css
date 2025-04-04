@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ff9ee3;
+    color: #fff7f1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9ee3; /* Adjust background color */
+    position:relative; /* Ensures proper positioning */
+    margin-bottom: -30px;
+}
+
+h5 {
+    list-style: none;
+    margin-right: 70px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    font-size: 15px;
+    color: #FFF7F1;
+    text-decoration: none;
+    background-color: #FF9EE3;
+}
+
+.nav-left {
+    left: 50px;
+}
+
+.nav-right {
+    right: 50px;
+}
+
+.nav-left a, .nav-right a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff7f1; /* Change as needed */
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    line-height:40px;
+}
+
+h5:hover {
+    color: #f0e2ed; /* Adjust hover color */
+    transition: 0.3 ease;
+    border-radius: 40px;
+    box-sizing: border-box;
+
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust logo size */
+    width: 140px;
+    margin-bottom: 0px;
+}
+
+p{
+    color: #c49b74;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: #fff7f1;
+    font-weight: bold;
+    padding: 70px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #FFF7F1;
+    padding-left: 230px;
+    padding-right: 230px;
+    line-height: 2.0;
+}
+
+h1{
+    text-align: center;
+    background-color: #fff7f1;
+    margin-bottom: -40px;
+    margin-top: 30px;
+    font-size: 50px;
+    text-decoration: none;
+    color: #FF9EE3;
+    padding-top: 50px;
+    font-family: "Cinzel Decorative", serif;
+}
+
+footer {
+    background-color: #FF9EE3;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-logo{
+    height: 80px;
+    align-items: center;
+    background-color: #FF9EE3;
+}
+
+.footer-nav a {
+    color: #fff7f1;
+    text-decoration:none;
+    margin: 30px;
+    background-color: #FF9EE3;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration:none;
+    background-color: #FF9EE3;
+}
+
+h4{
+    background-color: #FF9EE3;
+    color: #FFF7F1;
+    display: contents;
+    text-align: center;
+    padding: 5%;
+    margin: 0%;
+}
+
+h3{
+    color: #fff7f1;
+    background-color: #ff9ee3;
+    margin-top: 45px;
+}
+
+h2{
+    color: #66480f;
+    display: flex;
+    font-size: 30px;
+    background-color: #FFF7F1;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 60px;
+    font-family: Cinzel Decorative;
+    padding-right: 40px;
+    font-weight: 900;
+}
+
+.mission-text p{
+    font-family: Abril Fatface;
+    padding: 40px;
+    font-weight: 100;
+    font-size: 17px;
+    padding-right: 40px;
+    line-height: 2.0;
+}
+
+.mission {
+    padding: 70px;
+    padding-top: 30px;
+    padding-right: 550px ;
+    padding-left: 150px;
+}
+
+.mission img{
+    width: 396px;
+    margin-left: 610px;
+    margin-top: -400px;
+    margin-bottom: -51px;
+}
+
+
+

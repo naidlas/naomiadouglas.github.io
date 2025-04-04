@@ -1,0 +1,213 @@
+/* Imported Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel+Decorative:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ff9ee3;
+    color: #fff7f1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9ee3; /* Adjust background color */
+    position:relative; /* Ensures proper positioning */
+    margin-bottom: 0px;
+}
+
+h5 {
+    list-style: none;
+    margin-right: 70px;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    position:relative;
+    font-size: 15px;
+    color: #FFF7F1;
+    text-decoration: none;
+    background-color: #FF9EE3;
+}
+
+.nav-left {
+    left: 50px;
+}
+
+.nav-right {
+    right: 50px;
+}
+
+.nav-left a, .nav-right a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff7f1; /* Change as needed */
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    line-height:40px;
+}
+
+h5:hover {
+    color: #f0e2ed; /* Adjust hover color */
+    transition: 0.3 ease;
+    border-radius: 40px;
+}
+
+/* Logo section */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px; /* Adjust logo size */
+    width: 140px;
+    margin-bottom: 0px;
+}
+
+h1{
+    text-align: center;
+    background-color: #fff7f1;
+    padding: 40px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    color: #ff9ee3;
+    font-family: "Cinzel Decorative", times new roman;
+}
+
+.image-container {
+    display: flex; /* Aligns images in a row */
+    justify-content: center; /* Centers images horizontally */
+    gap: 70px; /* Space between images */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    padding: 20px 50px;
+    margin: 40px;
+    background-color: #FFF7F1;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Styling for images */
+.image-container img {
+    width: 200px; /* Resize image width */
+    height: 270px; /* Maintain aspect ratio */
+    border-radius: 800px; /* Optional rounded corners */
+    border: 5px #FF9EE3;
+    margin: 0px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.shop-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    background-color: #FFF7F1;
+    padding-bottom: 80px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Buttons Section */
+.product-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    gap: 105px;
+    justify-content: center;
+}
+
+/* Button Styling */
+.product-buttons {
+    background-color: #FFF7F1;
+    color: #c49b74;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    font-family: Abril Fatface;
+}
+
+
+.product-buttons:hover {
+    background-color: #FFF7F1;
+    color: #FF9EE3;
+    border: none;
+}
+
+.product-prices h2 {
+    background-color: #FFF7F1;
+    color: #69443c;
+    display: inline-flex;
+    font-size: 15px;
+    padding-bottom: 80px;
+}
+
+.product-prices {
+    gap: 200px;
+    background-color: #FFF7F1;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #FF9EE3;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-logo{
+    height: 80px;
+    align-items: center;
+    background-color: #FF9EE3;
+}
+
+.footer-nav a {
+    color: #fff7f1;
+    text-decoration:none;
+    margin: 30px;
+    background-color: #FF9EE3;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration:none;
+    background-color: #FF9EE3;
+}
+
+h4{
+    background-color: #FF9EE3;
+    color: #FFF7F1;
+    display: contents;
+    text-align: center;
+    padding: 5%;
+    margin: 0%;
+}
+
+h3{
+    color: #fff7f1;
+    background-color: #ff9ee3;
+    margin-top: 45px;
+}
+
+h2{
+    color: #69443c;
+    text-align: center;
+    font-size: 30px;
+    background-color: #FFF7F1;
+    gap: 90px;
+    margin-top: 0px;
+}
+
